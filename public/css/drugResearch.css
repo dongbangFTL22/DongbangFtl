@@ -1,0 +1,65 @@
+/**{
+  font-family: 'Goblin One', cursive;
+font-family: 'Open Sans', sans-serif !important;
+font-family: 'Roboto', sans-serif;
+}*/
+
+ h2{
+   text-align: center;
+ }
+ p{
+   padding-left: 10%;
+   padding-right: 10%;
+ }
+.img{
+  margin: 0 auto;
+  height: auto;
+  max-width: 100%;
+  border: none;
+  display: block;
+  padding: 5px 0;
+}
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 10px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 10px;
+}
+.historyclass{
+  height: 30%;
+  width: 30%;
+}
+.row-h{
+  height: 500px;
+}
+.imgContainer{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.btn{
+  position: absolute;
+
+  right: 30%;
+
+}

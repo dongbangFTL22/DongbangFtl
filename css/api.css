@@ -1,0 +1,134 @@
+/**{
+  font-family: 'Goblin One', cursive ;
+font-family: 'Open Sans', sans-serif !important;
+font-family: 'Roboto', sans-serif;
+}*/
+
+/*====table style======*/
+.styled-table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1rem;
+  min-width: 100%;
+
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+.styled-table thread tr{
+  background-color: #a9294f;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #a9294f;
+}
+
+.img{
+  height: 30px;
+  width: 30px;
+}
+.title{
+  text-align: center;
+
+}
+.thWidth{
+  width: 20%;
+}
+.cardbanner{
+
+  font-weight: normal!important;
+}
+
+.dongbong_div_body{
+  align-items: flex-start;
+}
+.card_deck_main{
+  position: relative;
+
+}
+
+.big-banner{
+  background-image: url('/images/api.png');
+
+
+}
+/*title{
+  background-color:#1597bb;
+  font-style: oblique;
+  font-family:inherit;
+  text-align: center;
+  padding-top: 2%;
+  color: #f3f4ed;
+}
+
+#api_nsaid{
+  background-color: grey;
+  font-size: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: #903749;
+}
+#api_firstcard{
+  background-color: grey;
+  font-size: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: #1597bb;
+}
+#api_others{
+  background-color: grey;
+  font-size: 100%;
+  text-align: left;
+  font-weight: bold;
+  color:#ffe268;
+}
+#api_diabetes{
+  background-color: grey;
+  font-size: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: #c64756;
+}
+#api_urogenital{
+  background-color: grey;
+  font-size: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: #ff7a00;
+}
+#api_antico{
+  background-color: grey;
+  font-size: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: #81b214;
+}
+#list-item{
+  text-align:left;
+}
+#dot-img{
+  width: 0.7%;
+  height: 0.7%;
+}
+#product_list{
+  width: 200px;
+}
+
+#product-img{
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}*/

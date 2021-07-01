@@ -1,0 +1,52 @@
+
+.ceotitle{
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight:bold;
+  position: absolute;
+  left: 50%;
+}
+ .ceomessage{
+   padding: 0;
+  padding-top: 2%;
+  text-align: left;
+  width: 50%;
+  position: relative;
+  left: 30%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+.historyclass{
+  height: 300px;
+  width: 90%;
+}
+.row-h{
+  height: 500px;
+}
+.address{
+  color: white;
+  background-color: #282846;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 70px 0 0 70px;
+}

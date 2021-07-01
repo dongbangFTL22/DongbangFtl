@@ -1,0 +1,19 @@
+.card_structure{
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.card-title{
+  background-color: #da7f8f;
+  text-align: center;
+}
+.card-text{
+margin-right: 20px;
+}
+.title{
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
