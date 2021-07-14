@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" href="css/test.css"> -->
+  <!--Css files-->
+  <link rel="stylesheet" href="../css/styleh.css">
+  <link rel="stylesheet" href="../css/chart.css">
+  <title>DongbangFTL</title>
+  <style media="screen">
+    #map {
+      height: 500px;
+      width: 80%;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+  <header>
+    <div class="banner-area">
+      <!--  <div class="container "> -->
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <a class="navbar-brand" href="../html/index.html"><img class="companyLogo" src="../images/dongbangLogohighre.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ml-auto ">
+                <li class="nav-item dropdown menu-area ">
+                  <a class="nav-link dropdown-toggle" href="#" id="mega-one" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                  </a>
+                  <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
+                    <div class="row">
+                      <div class=" col-sm-6 col-lg-3" style=" border-right: 2px solid #bbbbbb;">
+                        <h5 class="dropdownmenu rounded" style="padding-bottom:5px;">Our Company</h5>
+                        <a class=" dropdown-item " href="">
+                          <img class="rounded" src="../images/dongbangbuilding.png" style="width:100%;height:200px; " alt="">
+                        </a>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded"><b>About Company</b></h5>
+                        <a class="dropdown-item" href="../html/aboutUs.html">CEO Message</a>
+                        <a class="dropdown-item" href="../html/aboutUs.html">Company Philosophy</a>
+                        <a class="dropdown-item " href="../html/ourhistory.html">History</a>
+                        <a class="dropdown-item " href="../html/aboutUs.html">Address</a>
+                        <a class="dropdown-item " href="../html/aboutUs.html">Manufacturing Units</a>
+                      </div>
+                      <div class=" col-sm-6 col-lg-3">
+                        <h5 class="rounded"><b>Company Infrastructure</b></h5>
+                        <a class="dropdown-item " href="../html/companyWelfare.html">Company dormitory</a>
+                        <a class="dropdown-item " href="../html/companyWelfare.html">Healthy work environment</a>
+                        <a class="dropdown-item " href="../html/equipment.html">Equipments</a>
+                        <a class="dropdown-item " href="../html/companyWelfare.html">Environmental Policy</a>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded"><b>Child Company</b></h5>
+                        <a class="dropdown-item " href="http://localhost:8080/">Gapi Bio</a>
+                        <a class="dropdown-item " href="http://192.168.200.10:2599/">MFD Bio</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown menu-area">
+                  <a class="nav-link dropdown-toggle" href="#" id="mega-two" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Business
+                  </a>
+                  <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded">Company</h5>
+                        <a class="dropdown-item " href="#">
+                          <img src="../images/dongbangbuilding.png" style="width:100%;" alt="">
+                        </a>
+
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded">Business</h5>
+                        <a class="dropdown-item " href="../html/business_overseas.html">Business Overseas</a>
+                        <a class="dropdown-item " href="../html/business.html">Main Business</a>
+                        <a class="dropdown-item " href="../html/otherBusiness.html">Other Business</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--  <li class="nav-item menu-area">
+                  <a class="nav-link" href="../html/api.html">API List</a>
+                </li> -->
+
+                <li class="nav-item dropdown menu-area">
+                  <a class="nav-link dropdown-toggle" href="#" id="mega-two" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    R&D
+                  </a>
+                  <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded">Company</h5>
+                        <a class="dropdown-item " href="#">
+                          <img src="../images/dongbangbuilding.png" style="width:100%;" alt="">
+                        </a>
+
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded">R&D</h5>
+                        <a class="dropdown-item " href="../html/newDrugDevelopment.html">New Drug Development</a>
+                        <a class="dropdown-item " href="../html/genericApi.html">Generic API</a>
+                        <a class="dropdown-item " href="../html/drugResearch.html">Research Process</a>
+                        <a class="dropdown-item " href="../html/rdAPI.html">R&D API</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown menu-area">
+                  <a class="nav-link dropdown-toggle" href="#" id="mega-three" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Product
+                  </a>
+                  <div class="dropdown-menu mega-area" aria-labelledby="mega-three">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded">Product</h5>
+                        <a class="dropdown-item " href="../html/naturalProduct.html">Natural Product</a>
+                        <a class="dropdown-item " href="../html/formulationProduct.html">Formulation Product</a>
+                        <a class="dropdown-item" href="../html/api.html">API List</a>
+
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded">Company</h5>
+                        <a class="dropdown-item " href="#">
+                          <img src="../images/dongbangbuilding.png" style="width:100%;" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown menu-area">
+                  <a class="nav-link dropdown-toggle" href="#" id="mega-four" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact Us
+                  </a>
+                  <div class="dropdown-menu mega-area" aria-labelledby="mega-four">
+                    <div class="row">
+
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded">Contact Us</h5>
+                        <a class="dropdown-item " href="#">Product Enquiry</a>
+
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <h5 class="rounded">Company</h5>
+                        <a class="dropdown-item " href="#">
+                          <img src="../images/dongbangbuilding.png" style="width:100%;" alt="">
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+
+
+  </header>
+
+  <link rel="stylesheet" href="../css/business.css">
+  <img src="../images/business_oversea.jpg" class="img-thumbnail img-responsive aboutusImg" alt="">
+  <div class="business portfolio">
+
+
+    <h4 class="">Business Portfolio</h4>
+  </div>
+  <div class="container">
+    <div class="row bussiness_discription">
+      DongbangFTL is ahead of industry in terms of R&D spend. Portfolio
+      management in new drug development is extremely challenging due to long
+      drug development cycles and high probabilities of failure.
+
+      As a pharmaceutical company, we need continuously evaluate not only our business Strategy but also disease
+      strategy to discern gaps in our Portfolio.
+
+      Business Portfolio allows it to pursue its stategic goals. This portfolio can also be defined as the set of
+      available assets that the company posses to develop our mission and reach our goals.
+
+    </div>
+
+  </div>
+  <div class="b-skills">
+    <div class="container">
+      <h2>chart view</h2>
+      <div class="row">
+        <div class="col">
+          <canvas class="chart" id="pieChart"></canvas>
+          <p><b>Experience in successfully delivering customized solutions</b></p>
+          <p>Types Of Projects</p>
+        </div>
+        <div class="col">
+          <table class="table table-borderless">
+          <tbody>
+            <tr>
+              <th>Process Development and Supply (30%)</th>
+              <td>
+                <img src="../images/blueS.png" alt="">
+              </td>
+
+            </tr>
+            <tr>
+              <th>Supply(Commercial / Clinical) (51%)</th>
+              <td>  <img src="../images/blueS1.png" alt=""></td>
+
+            </tr>
+            <tr>
+              <th >RSM/KSM/Intermediate (10%)</th>
+              <td> <img src="../images/blueSkin.png" alt=""></td>
+
+            </tr>
+            <tr>
+              <th>Others(FTE/POC/Stability/Impurity) (9%)</th>
+              <td><img src="../images/blueO.png" alt=""></td>
+
+            </tr>
+
+          </tbody>
+        </table>
+
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <canvas class="chart" id="pieChart1"></canvas>
+          <p><b>Collaborating with  a diverse portfolio of customers</b></p>
+          <p>Customer mix at DongbangFTL</p>
+        </div>
+        <div class="col">
+          <table class="table table-borderless">
+          <tbody>
+
+            <tr>
+              <th>Mid sized pharma (43)%</th>
+              <td>  <img src="../images/blueS1.png" alt=""></td>
+
+            </tr>
+            <tr>
+              <th >Large pharma(25%)</th>
+              <td> <img src="../images/blueS.png" alt=""></td>
+
+            </tr>
+            <tr>
+              <th>Biotech(20%)</th>
+              <td><img src="../images/blueO.png" alt=""></td>
+
+            </tr>
+            <tr>
+              <th>Others(12%)</th>
+              <td>
+                <img src="../images/blueSkin.png" alt="">
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <canvas class="chart" id="pieChart2"></canvas>
+          <p><b>Experience in successfully delivering customized solutions</b></p>
+          <p>Customer mix by geography</p>
+        </div>
+        <div class="col">
+          <table class="table table-borderless">
+          <tbody>
+
+            <tr>
+              <th>Japan(40%)</th>
+              <td>  <img src="../images/blueS1.png" alt=""></td>
+
+            </tr>
+
+            <tr>
+              <th>EU(30%)</th>
+              <td><img src="../images/blueS.png" alt=""></td>
+
+            </tr>
+            <tr>
+              <th>Others(12%)</th>
+              <td>
+                <img src="../images/blueO.png" alt="">
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="business">
+
+    <h3 class=""><b>Customers</b></h3>
+    <h4 class="">Business Overseas</h4>
+  </div>
+  <div class="container ">
+    <div class="row bussiness_discription">
+      We are the leading exporter in the global market.
+      Nearly 60% of turnover comes from overseas market.
+      DongbangFTL has been exporting high quality pharmaceutical products to the big global pharmaceutical companies.
+      We have many customers overseas such as Europe, Japan, China and many more.
+
+      Following map will give you the brief introduction of our overseas market.
+
+      We have GMP certificate from many countries such as JAPAN, Australia, France which makes us reliable source to do business overseas.
+
+      <b>We audited by :</b>
+
+      <ul>
+        <br>
+        <li>Korean FDA (KDMF)</li>
+        <li>Australian GMP (TGA)</li>
+        <li>French ANSM</li>
+        <li>Japanese GMP (PMDA)</li>
+        <li>Kazakstan MoHSD</li>
+      </ul>
+    </div>
+    <div class="row">
+      <h6>Below chart will show the <b>country : No. Of Customers</b></h6>
+
+      <div id="chartdiv"></div>
+    </div>
+
+  </div>
+
+
+  <div class="business ">
+
+
+    <h4>Customers and Partners</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <img class="map" src="../images/customer_buyer.png" alt="">
+    </div>
+  </div>
+
+
+  <div class="business portfolio">
+
+
+    <h2 class=""><b>Main Business</b></h2></div>
+  <div class="row row-h"  style="background-color:#f1f1f1">
+
+
+    <div class="column-66" style="padding-left:10%;">
+
+      <p><b>Active Pharmaceutical Product:</b>Our Active Pharmaceutical Ingredients factories specialize in most of anti-inflammatory analgesic drugs such as Mefenamic Acid, Loxoprofen Na and Felbinac and have successfully acquired the Austramilan GMP(TGA)certificate as well as the KGMP certificate.</p>
+      <p><b>Natural Product:</b>Our Natural API plant has produced high quality natural API through the process of extraction, concentration, purification, drying since 1st approval of BGMP for Natural Active Pharmaceutical Ingredients in Korea in April 2004. </p>
+      <p><b>Formulation Product:</b>Our Finished Drug plant is optimized in order to produce Soft / Hard Capsules, tablets The main strengths of ours are modern facilities, professional staffs and well-established quality assurance system through our strict manufacturing process management and quality control. </p>
+  <br>
+        <a href="../html/business.html" class="btn btn-danger" role="button" aria-disabled="true">Read More</a>
+    </div>
+    <div class="column-33">
+      <img class="historyclass rounded" src="../images/api.jpg">
+    </div>
+  </div>
+
+  <div class="business portfolio">
+
+
+    <h2 class=""><b>Other Business</b></h2></div>
+  <div class="row row-h"  style="background-color:#f1f1f1">
+    <div class="column-33">
+      <img class="historyclass rounded" src="../images/otherBusiness.png">
+    </div>
+    <div class="column-66">
+
+      <p>DongbangFTL established an OIC in South Korea and opened its research and production facilities to external companies, universities and research Institute.
+      Other than OIC we have new drug developement lab which focuses on a navel multi-disciplinary research targeting medically important problems in human being.</p>
+  <br>
+        <a href="../html/otherBusiness.html" class="btn btn-danger" role="button" aria-disabled="true">Read More</a>
+    </div>
+
+  </div>
+
+
+  <p class="float-right"><a href="#"><i class=" arrow fas fa-5x fa-arrow-alt-circle-up" style="color:white;"></i></a></p>
+  <!--footer-->
+  <link rel="stylesheet" href="../css/footer.css">
+  <!--<link rel="stylesheet" href="css/all.min.css">-->
+
+
+  <footer id="footer" class="text-muted dongbong_foot">
+
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col">
+          <h5>About Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="aboutUs">CEO Message</a></li>
+            <li><a href="aboutUs">About Us</a></li>
+            <li><a href="aboutUs">Company Philosophy</a></li>
+            <li><a href="ourhistory">History</a></li>
+            <li><a href="aboutUs">Address</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>API</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="../html/api.html">API List</a></li>
+
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Product</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="../html/formulationProduct.html">Formulation Product</a></li>
+            <li><a href="../html/naturalProduct.html">Natural Product</a></li>
+            <li><a href="#">Finished Product</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Research and Developement</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02">API Research Procedure</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02">API Development Procedure</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02">Product Enquiry</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02">Board</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+
+            <a href="https://www.linkedin.com/company/dongbangftl/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <br>
+            Contact Us on linkedin
+          </ul>
+        </div>
+        <hr>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p> Seoul Office: 9, Donhwamun-ro 11-gil, Jongno-gu, Seoul | Tel : +82--2-741-7516 | Fax: 82-2-741-7525</p>
+          <p> Factory : 78, Jeyakgongdan 4-gil, Hyangnam-eup, Hwaseong-si, Gyeonggi-do | Tel : +82-31-354-1114 | Fax : +82-31-353-4120</p>
+          <p class="h6">DONGBANG FTL © All right Reversed.</p>
+        </div>
+        <hr>
+      </div>
+
+    </div>
+  </footer>
+
+  <!--<script type="text/javascript" src="/js/pieChart.js"></script> -->
+  <script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="path/to/chartjs/dist/chart.js"></script>
+  <script src="../js/Chart.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="../js/pieChart.js"></script>
+  <script type="text/javascript" src="../js/pieChart1.js"></script>
+  <script type="text/javascript" src="../js/pieChart2.js"></script>
+  <script type="text/javascript" src="/js/map.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
+
+<!--<div class="col-md-3">
+  <div class="skill-item center-block">
+    <div class="chart-container">
+      <p><b>Experience in  delivering customized solution</b></p>
+      <div class="row">
+        <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <canvas class="chart" id="pieChart"></canvas>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-3">
+  <div class="skill-item center-block">
+    <div class="chart-container">
+      <h1>In Second</h1>
+      <canvas class="chart" id="pieChart1"></canvas>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-3">
+  <div class="skill-item center-block">
+    <div class="chart-container">
+      <h1>In 3rd</h1>
+      <canvas class="chart" id="pieChart2"></canvas>
+    </div>
+  </div>
+
+</div>-->
+
+
+
+<!--  <script type="text/javascript">
+    var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
+    var pieChart = new Chart(pieChartCanvas);
+    var PieData = [{
+        value: 30,
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "Process Development and Supply"
+      },
+      {
+        value: 51,
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "Supply(Commercial / Clinical)"
+      },
+      {
+        value: 10,
+        color: "#f39c12",
+        highlight: "#f39c12",
+        label: "RSM/KSM/Intermediate"
+      },
+      {
+        value: 9,
+        color: "#00c0ef",
+        highlight: "#00c0ef",
+        label: "Others(FTE/POC/Stability/Impurity)"
+      }
+    ];
+
+    var pieChartCanvas1 = $("#pieChart1").get(0).getContext("2d");
+    var pieChart1 = new Chart(pieChartCanvas1);
+    var PieData1 = [{
+        value: 25,
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "Process Development and Supply"
+      },
+      {
+        value: 43,
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "Supply(Commercial / Clinical)"
+      },
+      {
+        value: 12,
+        color: "#f39c12",
+        highlight: "#f39c12",
+        label: "RSM/KSM/Intermediate"
+      },
+      {
+        value: 20,
+        color: "#00c0ef",
+        highlight: "#00c0ef",
+        label: "Others(FTE/POC/Stability/Impurity)"
+      }
+    ];
+    var pieOptions = {
+      //Boolean - Whether we should show a stroke on each segment
+      segmentShowStroke: true,
+      //String - The colour of each segment stroke
+      segmentStrokeColor: "#fff",
+      //Number - The width of each segment stroke
+      segmentStrokeWidth: 2,
+      //Number - The percentage of the chart that we cut out of the middle
+      percentageInnerCutout: 0, // This is 0 for Pie charts
+      //Number - Amount of animation steps
+      animationSteps: 200,
+      //String - Animation easing effect
+      animationEasing: "easeOutBounce",
+      //Boolean - Whether we animate the rotation of the Doughnut
+      animateRotate: true,
+      //Boolean - Whether we animate scaling the Doughnut from the centre
+      animateScale: false,
+      //Boolean - whether to make the chart responsive to window resizing
+      responsive: true,
+      // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+      maintainAspectRatio: true,
+
+      //String - A legend template
+      legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+    };
+
+    pieChart.Doughnut(PieData, pieOptions);
+  </script>-->

@@ -1,0 +1,60 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+#chartdiv {
+  width: 100%;
+  height: 600px;
+}
+row{
+  width: 500px;
+  height: 500px;
+}
+.b-skills{
+  text-align: center;
+  padding: 45px;
+  border-top: 1px solid #f9f9f9;
+}
+.b-skills:last-child{
+  margin-bottom: -30px;
+}
+.b-skills .row{
+align-items: center!important;
+}
+.middle{
+  align-items: center!important;
+}
+.b-skills h2{
+  margin-bottom: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.skill-item{
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #555;
+}
+.chart-container{
+  position:relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  margin-bottom: 27px;
+}
+.skill-item .chart,
+.skill-item .chart canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+th{
+  font-weight: normal;
+  font-size: 11px;
+}
+.square{
+  height: 0px;
+  width: 0px;
+}

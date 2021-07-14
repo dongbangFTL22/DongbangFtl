@@ -1,0 +1,18 @@
+.image_center{
+  align-items: center;
+  display: block;
+  margin-top: 1%;
+   margin-left: auto;
+   margin-right: auto;
+
+ width: 50%;
+  height: 20%;
+  width: 20%;
+}
+
+.business{
+  text-align: center;
+  background-color:  #A2DBFA;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
