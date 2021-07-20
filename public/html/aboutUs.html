@@ -6,13 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-   <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">-->
   <!--<link rel="stylesheet" href="css/test.css"> -->
   <!--Css files-->
   <link rel="stylesheet" href="../css/styleh.css">
@@ -20,161 +24,69 @@
 </head>
 
 <body>
-<header>
-  <div class="banner-area">
-  <!--  <div class="container "> -->
-      <div class="row">
-        <div class="col">
-          <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="../html/index.html"><img class="companyLogo" src="../images/dongbangLogohighre.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+  <header>
+    <div class="banner-area">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="home"><img class="companyLogo" src="../images/dongbangLogohighre.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Company
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="aboutUs.html">About Company</a>
+              <a class="dropdown-item" href="ourhistory.html">History</a>
+              <a class="dropdown-item" href="companyWelfare.html">Infrastructure</a>
+              <a class="dropdown-item" href="childCompany.html">Child company</a>
+            </div>
+          </li>
 
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="navbar-nav ml-auto ">
-                <li class="nav-item dropdown menu-area ">
-                  <a class="nav-link dropdown-toggle" href="#" id="mega-one" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About Us
-                  </a>
-                  <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
-                    <div class="row">
-                      <div class=" col-sm-6 col-lg-3" style=" border-right: 2px solid #bbbbbb;">
-                        <h5 class="dropdownmenu rounded" style="padding-bottom:5px;">Our Company</h5>
-                      <a class=" dropdown-item " href="">
-                          <img class="rounded" src="../images/dongbangbuilding.png" style="width:100%;height:200px; " alt="">
-                        </a>
-                      </div>
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded"><b>About Company</b></h5>
-                      <a class="dropdown-item" href="../html/aboutUs.html">CEO Message</a>
-                      <a class="dropdown-item" href="../html/aboutUs.html">Company Philosophy</a>
-                      <a class="dropdown-item " href="../html/ourhistory.html">History</a>
-                      <a class="dropdown-item " href="../html/aboutUs.html">Address</a>
-                      <a class="dropdown-item " href="../html/aboutUs.html">Manufacturing Units</a>
-                      </div>
-                      <div class=" col-sm-6 col-lg-3">
-                        <h5 class="rounded"><b>Company Infrastructure</b></h5>
-                      <a class="dropdown-item " href="../html/companyWelfare.html">Company dormitory</a>
-                      <a class="dropdown-item " href="../html/companyWelfare.html">Healthy work environment</a>
-                      <a class="dropdown-item " href="../html/equipment.html">Equipments</a>
-                      <a class="dropdown-item " href="../html/companyWelfare.html">Environmental Policy</a>
-                      </div>
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded"><b>Child Company</b></h5>
-                      <a class="dropdown-item " href="http://localhost:8080/">Gapi Bio</a>
-                      <a class="dropdown-item " href="http://192.168.200.10:2599/">MFD Bio</a>
 
-                      </div>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="nav-item dropdown menu-area">
-                  <a class="nav-link dropdown-toggle" href="#" id="mega-two" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Business
-                  </a>
-                  <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
-                    <div class="row">
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded">Company</h5>
-                        <a class="dropdown-item " href="#">
-                          <img src="../images/dongbangbuilding.png" style="width:100%;" alt="">
-                        </a>
-
-                      </div>
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded">Business</h5>
-                        <a class="dropdown-item " href="../html/business_overseas.html">Business Overseas</a>
-                        <a class="dropdown-item " href="../html/business.html">Main Business</a>
-                        <a class="dropdown-item " href="../html/otherBusiness.html">Other Business</a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              <!--  <li class="nav-item menu-area">
-                  <a class="nav-link" href="../html/api.html">API List</a>
-                </li> -->
-
-                <li class="nav-item dropdown menu-area">
-                  <a class="nav-link dropdown-toggle" href="#" id="mega-two" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    R&D
-                  </a>
-                  <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
-                    <div class="row">
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded">Company</h5>
-                      <a class="dropdown-item " href="#">
-                          <img src="../images/dongbangbuilding.png" style="width:100%;" alt="">
-                        </a>
-
-                      </div>
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded">R&D</h5>
-                      <a class="dropdown-item " href="../html/newDrugDevelopment.html">New Drug Development</a>
-                      <a class="dropdown-item " href="../html/genericApi.html">Generic API</a>
-                      <a class="dropdown-item " href="../html/drugResearch.html">Research Process</a>
-                      <a class="dropdown-item " href="../html/rdAPI.html">R&D API</a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown menu-area">
-                  <a class="nav-link dropdown-toggle" href="#" id="mega-three" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Product
-                  </a>
-                  <div class="dropdown-menu mega-area" aria-labelledby="mega-three">
-                    <div class="row">
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded">Product</h5>
-                      <a class="dropdown-item " href="../html/naturalProduct.html">Natural Product</a>
-                      <a class="dropdown-item " href="../html/formulationProduct.html">Formulation Product</a>
-                        <a class="dropdown-item" href="../html/api.html">API List</a>
-
-                      </div>
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded">Company</h5>
-                      <a class="dropdown-item " href="#">
-                          <img src="../images/dongbangbuilding.png" style="width:100%;" alt="">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown menu-area">
-                  <a class="nav-link dropdown-toggle" href="#" id="mega-four" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Contact Us
-                  </a>
-                  <div class="dropdown-menu mega-area" aria-labelledby="mega-four">
-                    <div class="row">
-
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded">Contact Us</h5>
-                          <a class="dropdown-item " href="#">Product Enquiry</a>
-
-                      </div>
-                      <div class="col-sm-6 col-lg-3">
-                        <h5 class="rounded">Company</h5>
-                      <a class="dropdown-item " href="#">
-                          <img src="../images/dongbangbuilding.png" style="width:100%;" alt="">
-                        </a>
-
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              R&D
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="newDrugDevelopment.html">New Drug Development</a>
+              <a class="dropdown-item" href="genericapi.html">Generic API</a>
+              <a class="dropdown-item" href="#">Research Process</a>
 
             </div>
-          </nav>
-        </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Product</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="api.html">Active pharmaceutical Ingredients</a>
+              <a class="dropdown-item" href="naturalProduct.html">Natural Product</a>
+              <a class="dropdown-item" href="formulationProduct.html">formulation Product</a>
+
+            </div>
+          </li>
+
+           <li class="nav-item">
+             <a class="nav-link" href="services.html"> Partnership Services</a>
+           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="business_overseas.html">Global Market</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#productEnquiry.html">Product Enquiry</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
       </div>
 
 
-</header>
-<link rel="stylesheet" href="../css/ceo.css">
+  </header>
+  <link rel="stylesheet" href="../css/ceo.css">
 
-<!--<div id="carouselControls" class="carousel slide padding-0" data-ride="carousel" >
+  <!--<div id="carouselControls" class="carousel slide padding-0" data-ride="carousel" >
       <div id="home" class="carousel-inner">
         <div class="carousel-item item active"><img class="d-block img-fluid h-60" src="../images/aboutus.jpg" alt="Laptop"></div>
 
@@ -182,215 +94,230 @@
 
     </div>
 -->
-<img src="../images/aboutus.jpg" class="img-thumbnail img-responsive aboutusImg" alt="">
+  <img src="../images/aboutus.png" class="img-thumbnail img-responsive Img" alt="">
 
-    <div class="row" style="background-color:#f1f1f1">
-        <div class="column padding-0">
-          <h4 class="ceotitle">CEO Message</h4>
-          <p class="ceomessage">Thank You for visiting Dongbang Future Tech & Life
-Dongbang Future Tech & Life was originally founded under the name of Dongbang Synthetic
-Chemical and over the years we have built a trusted and renowned company through our patient
-centric pharmaceutical products. We at Dongbang Future Tech & Life believe in developing
- quality assured pharmaceutical products that contribute to the “health and wellness” of our consumers.
-With growing number of daily health related problems among the mankind around the world,
- we as a pharmaceutical company have a big responsibility on our shoulders to comply our
- focus more on quality based products that effectively benefit and relieve the patients.
-  We believe in maintaining our income/operational cost ratio for achieving more stable
-  growth and greater success in the pharmacological zone.
-We are proud to achieve KGMP certificates in the field of Finished Drugs, Active Pharmaceutical Ingredients
- and Natural Active Ingredients from the respective authorities in the past 20 years of our establishment.
- We are also well- known in the field of Total Health Care for developing Quasi Drugs and forming Cosmetic
- Factories and Research Institutes.
-With the use of natural and well-researched products, we at Dongbang Future Tech & Life believe in further
- growing our company globally by on-boarding various new skills, researches and technologies to instill
- in our ongoing and future projects for developing the most relied and trusted pharmaceutical products for
- our consumers and to spread improved health and happiness among them.
-  </p>
+  <div class="row ceo" style="background-color:#f1f1f1">
+    <div class="column padding-0">
+      <h4 class="ceotitle">CEO Message</h4>
+      <p class="ceomessage">
+        <span style="color:#39A2DB"> "Thank You for visiting Dongbang Future Tech & Life."</span>
+        <br><br>
+        Dongbang Future Tech & Life was originally founded under the name of Dongbang Synthetic
+        Chemical and over the years we have built a trusted and renowned company through our patient
+        centric pharmaceutical products. <br>We at Dongbang Future Tech & Life believe in developing
+        quality assured pharmaceutical products that contribute to the “health and wellness” of our consumers.<br>
+        <br>With growing number of daily health related problems among the mankind around the world,
+        we as a pharmaceutical company have a big responsibility on our shoulders to comply our
+        focus more on quality based products that effectively benefit and relieve the patients.<br>
+        We believe in maintaining our income/operational cost ratio for achieving more stable
+        growth and greater success in the pharmacological zone.
+        <br><br>We are proud to achieve KGMP certificates in the field of Finished Drugs, Active Pharmaceutical Ingredients
+        and Natural Active Ingredients from the respective authorities in the past 20 years of our establishment.
+        We are also well- known in the field of Total Health Care for developing Quasi Drugs and forming Cosmetic
+        Factories and Research Institutes.
+        <br><br>
+        With the use of natural and well-researched products, we at Dongbang Future Tech & Life believe in further
+        growing our company globally by on-boarding various new skills, researches and technologies to instill
+        in our ongoing and future projects for developing the most relied and trusted pharmaceutical products for
+        our consumers and to spread improved health and happiness among them.
+      </p>
 
-  <p class="ceomessage">Thank you</p>
-  <p class="ceomessage"> CEO Hun Suk Chung</p>
-  </div>
-  </div>
-  <div class="card address">
-    <div class="card-body">
-    <p> Company Philosophy</p>
-
-    <p>'Promotion of health and happiness of human being'</p>
-    <p>The members of the DONGBANG FTL, on the grounds that everyone is equal, cooperate with mutual trust and respect, irrespective of gender and hierarchy.
-      We thrive to develop the best quality and advanced technology and through the creation of the value of life, build a prosperous and bright society.</p>
+      <p class="ceomessage">Thank you</p>
+      <p class="ceomessage"> CEO Hun Suk Chung</p>
     </div>
   </div>
+  <div class="card address">
+    <div class="card-body Philosophy">
+      <p> Company Philosophy</p>
 
+      <p>'Promotion of health and happiness of human being'</p>
+      <p>The members of the DONGBANG FTL, on the grounds that everyone is equal, cooperate with mutual trust and respect, irrespective of gender and hierarchy.
+        We thrive to develop the best quality and advanced technology and through the creation of the value of life, build a prosperous and bright society.</p>
+    </div>
+  </div>
+  <div class="container">
     <div class="row row-h">
       <div class="column-33">
         <img class="historyclass rounded" src="../images/historyphoto.png">
       </div>
       <div class="column-66">
         <h2><b>Our History</b></h2>
-        <p >DongbangFTL is established in 1990. We are doing a research to develop the pharmacutical products for better health and improved quality of life.
+        <p>DongbangFTL is established in 1990. We are doing a research to develop the pharmacutical products for better health and improved quality of life.
           Producing high quality pharmacutical products is ultimate way to contribute healthy and happy life of human being.</p>
 
         <a href="../html/ourhistory.html" class="btn btn-danger" role="button" aria-disabled="true">Read More</a>
       </div>
     </div>
-    <div class="row row-h"  style="background-color:#f1f1f1">
+  </div>
+  <div class="container">
+    <div class="row row-h" style="background-color:#f1f1f1">
       <div class="column-66">
         <h2><b>Company Walfare</b></h2>
-        <p >Bearing in mind that company can grow only when all company members are happy, DongbangFTL care a lot about the compant welfare
+        <p>Bearing in mind that company can grow only when all company members are happy, DongbangFTL care a lot about the compant welfare
           there employees in accordence with company welfare and regulation without regard to race, color, religion, gender, national origin
-    ,disability or age.</p>
-    <p>
-        Maintaining a healthy work place environment
-    </p>
-          <a href="../html/companyWelfare.html" class="btn btn-danger" role="button" aria-disabled="true">Read More</a>
+          ,disability or age.</p>
+        <p>
+          Maintaining a healthy work place environment
+        </p>
+        <a href="../html/companyWelfare.html" class="btn btn-danger" role="button" aria-disabled="true">Read More</a>
       </div>
       <div class="column-33">
         <img class="historyclass rounded" src="../images/welfare1.png">
       </div>
 
     </div>
+  </div>
+  <div class="container">
     <div class="row row-h">
       <div class="column-33">
         <img class="historyclass rounded" src="../images/gapibio.jpg">
       </div>
       <div class="column-66">
         <h2><b>Child Company</b></h2>
-        <p >We established research company Gapi Bio which collaborates with DongbangFTL and conduct various research.
-            We also established research startup company MFTBio in 2019 which conducts innovative research, drug discovery and drug Development.</p>
-          <a href="ourhistory" class="btn btn-danger" role="button" aria-disabled="true">Read More</a>
+        <p>We established research company Gapi Bio which collaborates with DongbangFTL and conduct various research.
+          We also established research startup company MFTBio in 2019 which conducts innovative research, drug discovery and drug Development.</p>
+        <a href="ourhistory" class="btn btn-danger" role="button" aria-disabled="true">Read More</a>
       </div>
-</div>
+    </div>
 
-<div class="row" style="background-color:#f1f1f1">
+  </div>
+  <div class="container">
+    <div class="row ceo" style="background-color:#f1f1f1">
       <div class="column padding-0">
-        <h4 class="ceotitle">Manufacturing Units</h4>
-        <p class="ceomessage">The well-planned and state-of –the-art facilities
-          at DongBang FTL have led to its faster growth in the pharmaceutical sector.
+        <h4 class="ceotitle ceo">Manufacturing Units</h4>
+        <p class="ceomessage ceo">The well-planned and our facilities
+          at DongBangFTL have led to its faster growth in the pharmaceutical sector.
           Infrastructure plays a vital role in the development and progress of a company.
           The reputation of our company is made on manufacturing and R&D facilities that are designed
           to meet global standards, and stringent Quality standards that ensure we deliver only the best
           formulations and products. The manufacturing units are designed to meet the current global
-          standards of GMP and safety standards for personnel.  </p>
+          standards of GMP and safety standards for personnel. </p>
 
-</div>
-</div>
-<div class="container" style="padding-top:2%; padding-bottom:2%;">
-  <div class="row">
-    <div class="col order-last">
-      <img src="../images/machinedongbang.png" class="rounded-circle" alt="" style="width:100%; height:100%;">
-    </div>
-    <div class="col">
-      <img src="../images/machinedongbang1.png" alt="" class="rounded-circle" style="width:100%; height:100%;">
-    </div>
-    <div class="col order-first">
-      <img src="../images/machinedongbang2.png" alt="" class="rounded-circle" style="width:100%; height:100%;">
+      </div>
     </div>
   </div>
-</div>
 
-    <div class="card address">
-      <div class="card-body">
+  <div class="container" style="padding-top:2%; padding-bottom:2%;">
+    <div class="row ">
+      <div class="col order-last">
+        <img src="../images/machinedongbang.png" class="rounded-circle" alt="" style="width:100%; height:100%;">
+      </div>
+      <div class="col">
+        <img src="../images/machinedongbang1.png" alt="" class="rounded-circle" style="width:100%; height:100%;">
+      </div>
+      <div class="col order-first">
+        <img src="../images/machinedongbang2.png" alt="" class="rounded-circle" style="width:100%; height:100%;">
+      </div>
+    </div>
+  </div>
+
+  <div class="card address">
+    <div class="card-body">
       <p> Dongbang Address</p>
       <br>
       <p>We have two offices located in South Korea.</p>
-      </div>
     </div>
-    <div class="card map_card">
-      <div class="container-fluid grey_container">
-        <div class="row">
-          <div class="col-6">
-            <h4 class="card-title" style="padding-bottom:20px; padding-top:20px;">Seoul Office</h4>
+  </div>
+  <div class="card map_card">
+    <div class="container-fluid grey_container">
+      <div class="row">
+        <div class="col-6">
+          <h4 class="card-title" style="padding-bottom:20px; padding-top:20px;">Seoul Office</h4>
           <div class="map-responsive">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.2649745228427!2d126.98863301558856!3d37.57237773155061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ddc397cd91%3A0x48906ea902506a1a!2s9%20Donhwamun-ro%2011-gil%2C%20Donui-dong%2C%20Jongno-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1619161439710!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.2649745228427!2d126.98863301558856!3d37.57237773155061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ddc397cd91%3A0x48906ea902506a1a!2s9%20Donhwamun-ro%2011-gil%2C%20Donui-dong%2C%20Jongno-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1619161439710!5m2!1sen!2skr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
-          </div>
-          <div class="col-6">
-            <h4 class="card-title" style="padding-bottom:20px; padding-top:20px;">headquarter</h4>
+        </div>
+        <div class="col-6">
+          <h4 class="card-title" style="padding-bottom:20px; padding-top:20px;">headquarter</h4>
           <div class="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5924549759548!2d126.89888491557882!3d37.09101235897444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b168e3adf558d%3A0x1099e64e9af747fd!2z64-Z67Cp7JeQ7ZSE7Yuw7JeYKOyjvCk!5e0!3m2!1sen!2skr!4v1618548616105!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          </div>
-        </div>
-
-        </div>
-    </div>
-    <p class="float-right"><a href="#"><i class=" arrow fas fa-5x fa-arrow-alt-circle-up" style="color:white;"></i></a></p>
-      <!--footer-->
-      <link rel="stylesheet" href="../css/footer.css">
-      <!--<link rel="stylesheet" href="css/all.min.css">-->
-
-
-      <footer id="footer" class="text-muted dongbong_foot">
-
-        <div class="container">
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
-          <div class="col">
-            <h5>About Us</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="aboutUs">CEO Message</a></li>
-              <li><a href="aboutUs">About Us</a></li>
-              <li><a href="aboutUs">Company Philosophy</a></li>
-              <li><a href="ourhistory">History</a></li>
-              <li><a href="aboutUs">Address</a></li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5>API</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="../html/api.html">API List</a></li>
-
-            </ul>
-          </div>
-          <div class="col">
-            <h5>Product</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="../html/formulationProduct.html">Formulation Product</a></li>
-              <li><a href="../html/naturalProduct.html">Natural Product</a></li>
-              <li><a href="#">Finished Product</a></li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5>Research and Developement</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="https://www.fiverr.com/share/qb8D02">API Research Procedure</a></li>
-                <li><a href="https://www.fiverr.com/share/qb8D02">API Development Procedure</a></li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5>Contact Us</h5>
-            <ul class="list-unstyled quick-links">
-              <li><a href="https://www.fiverr.com/share/qb8D02">Product Enquiry</a></li>
-                <li><a href="https://www.fiverr.com/share/qb8D02">Board</a></li>
-            </ul>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.5924549759548!2d126.89888491557882!3d37.09101235897444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b168e3adf558d%3A0x1099e64e9af747fd!2z64-Z67Cp7JeQ7ZSE7Yuw7JeYKOyjvCk!5e0!3m2!1sen!2skr!4v1618548616105!5m2!1sen!2skr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-            <ul class="list-unstyled list-inline social text-center">
-
-              <a href="https://www.linkedin.com/company/dongbangftl/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-              <br>
-              Contact Us on linkedin
-            </ul>
-          </div>
-          <hr>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-            <p> Seoul Office: 9, Donhwamun-ro 11-gil, Jongno-gu, Seoul | Tel : +82--2-741-7516 | Fax: 82-2-741-7525</p>
-            <p> Factory :  78, Jeyakgongdan 4-gil, Hyangnam-eup, Hwaseong-si, Gyeonggi-do | Tel : +82-31-354-1114 | Fax : +82-31-353-4120</p>
-            <p class="h6">DONGBANG FTL © All right Reversed.</p>
-          </div>
-          <hr>
-        </div>
-
       </div>
-      </footer>
-      <script type="text/javascript" src="/javascripts/index.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    </body>
+    </div>
+  </div>
+  <p class="float-right"><a href="#"><i class=" arrow fas fa-5x fa-arrow-alt-circle-up" style="color:white;"></i></a></p>
+  <!--footer-->
+  <link rel="stylesheet" href="../css/footer.css">
+  <!--<link rel="stylesheet" href="css/all.min.css">-->
 
-    </html>
+
+  <footer id="footer" class="text-muted dongbong_foot">
+
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col">
+          <h5>About Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="aboutUs">CEO Message</a></li>
+            <li><a href="aboutUs">About Us</a></li>
+            <li><a href="aboutUs">Company Philosophy</a></li>
+            <li><a href="ourhistory">History</a></li>
+            <li><a href="aboutUs">Address</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>API</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="../html/api.html">API List</a></li>
+
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Product</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="../html/formulationProduct.html">Formulation Product</a></li>
+            <li><a href="../html/naturalProduct.html">Natural Product</a></li>
+            <li><a href="#">Finished Product</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Research and Developement</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02">API Research Procedure</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02">API Development Procedure</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02">Product Enquiry</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02">Board</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+
+            <a href="https://www.linkedin.com/company/dongbangftl/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <br>
+            Contact Us on linkedin
+          </ul>
+        </div>
+        <hr>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p> Seoul Office: 9, Donhwamun-ro 11-gil, Jongno-gu, Seoul | Tel : +82--2-741-7516 | Fax: 82-2-741-7525</p>
+          <p> Factory : 78, Jeyakgongdan 4-gil, Hyangnam-eup, Hwaseong-si, Gyeonggi-do | Tel : +82-31-354-1114 | Fax : +82-31-353-4120</p>
+          <p class="h6">DONGBANG FTL © All right Reversed.</p>
+        </div>
+        <hr>
+      </div>
+
+    </div>
+  </footer>
+  <script type="text/javascript" src="/javascripts/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

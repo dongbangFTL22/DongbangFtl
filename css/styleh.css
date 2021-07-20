@@ -1,11 +1,62 @@
 *{
-  font-family: 'Newsreader', serif;
+  font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Comic Neue', cursive;*/
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+
 }
-.caronel_img{
-  height: 50%;
+
+/*Menu drop down*/
+.collapse ul li a {
+padding-right: 85px !important;
+padding-left: 50px !important;
+}
+.dropdown-menu{
+display: none;
+position: absolute;
+background-color: #f0f0f0;
+box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+border:0;
+}
+.dropdown-menu .dropdown-item{
+  padding-top: 40px !important;
+  text-align: center;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.navbar-nav .nav-link:hover{
+  background-color: #f0f0f0;
+  color: #39A2DB;
+  border-bottom: 1px solid #a9294f;
+  font-weight: bold;
+
+}
+
+
+a{
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+
+}
+.titlecontainer{
+
+  color: #f0f0f0;
+  letter-spacing: 0.15em;
+  padding: 10px 10px 10px 0px;
+}
+.title_home{
+  background-color: #39A2DB;
+    color: #f0f0f0;
+    letter-spacing: 0.15em;
+    z-index: 0;
+  padding: 10px 10px 10px 10px;
 }
 .aboutusImg{
-padding-top: 1.5%;
+
   height: 700px;
 width: 100%;
 display: block;
@@ -16,7 +67,7 @@ display: block;
 .menu-area{
   position: static;
 
-  font-family: 'Goblin One', cursive;
+
   letter-spacing: 2px;
 
   -webkit-transition:0.3s ease-in-out;
@@ -69,6 +120,10 @@ h5{
     line-height: 0.3;
     background-color: #fff;
   }
+  .dropdown-menu .dropdown-item{
+    padding-top: 0px !important;
+    text-align: center;
+  }
 }
 
 .image-grid-cover {
@@ -109,9 +164,26 @@ a, a:focus, a:hover {
     text-decoration: none;
     outline: 0;
 }
-.carousel-item{
+/*.carousel-item{
   width: 100%;
-  height: 80% !important;
+  height: 50% !important;
+}*/
+
+.carousel .carousel-item {
+  height: 500px;
+  z-index: 1;
+}
+
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+.card{
+  letter-spacing: 1px;
 }
 .card-deck{
   padding-top: 1%;
@@ -135,7 +207,35 @@ a, a:focus, a:hover {
 .card_border{
   border-style: none !important;
 }
-
+.card-title{
+  padding-top: 1%;
+}
+.card-text{
+  padding-top: 1%;
+}
+.business-body{
+  /*padding-top: 5%!important;*/
+}
+.business-body .business-text{
+  padding-top: 1%;
+}
+.dropdown-item:hover {
+    text-decoration: none;
+    outline: 0;
+    color:  #39A2DB;
+}
+.rnd{
+  padding-top: 10%;%!important;
+}
+.navImage{
+  position: relative;
+  object-fit:cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px !important;
+  /*height: 500px!important;*/
+}
 /**{
   font-family: 'Newsreader', serif;
 }

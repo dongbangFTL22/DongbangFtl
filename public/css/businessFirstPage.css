@@ -8,10 +8,13 @@
     padding-bottom: 20px;
     text-transform: uppercase;
 }
-ul{
+.centerContainer{
+
+}
+.rowcard{
   margin:0;
   padding:0;
-  list-style:none;
+  list-style:none!important;
   margin-top: 5%;
 }
 
@@ -39,7 +42,7 @@ ul{
     color:#3c3c3c;
 	font-size:24px;
 	font-weight:500;
-	font-family: 'Poppins', sans-serif;
+
 	padding: 10px 0;
 }
 .practice-area .inner p{
